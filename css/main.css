@@ -137,6 +137,7 @@
     background-color: green;
     padding: 10px;
     box-sizing: border-box;
+    display: none;
     >h1{
         font-family: sans-serif;
     }
