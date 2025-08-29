@@ -96,6 +96,7 @@ showRoot.addEventListener("click", function (e) {
   calculate.disabled = false;
   closeDiv.classList.remove("show");
   closeDiv.classList.add("close");
+  closeDivsubmit.classList.add("close")
 });
 
 calculate.addEventListener("click", function (e) {
@@ -109,7 +110,7 @@ calculate.addEventListener("click", function (e) {
   salaryValue();
 });
 
-// debugger
+
 closeDivsubmit.addEventListener("click", function (e) {
   e.preventDefault();
   root.classList.add("close");
