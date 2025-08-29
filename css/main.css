@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding:20px;
+    box-sizing: border-box;
+    >input{
+        all: unset;
+        background-color: orangered;
+        cursor: pointer;
+        border-radius: 10px;
+        font-size: 15px;
+        font-family: sans-serif;
+        padding: 10px 15px;
+        transition: 300ms;
+        &:hover{
+            background-color: rgb(255, 115, 0);
+        }
+        &.btnoff{
+            background-color: silver;
+            cursor: default;
+        }
+    }
+}
+.root{
+    width: 80%;
+    border: 1px solid #2b2b2b;
+    box-shadow: 0 0 25px #2b2b2b;
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 30px 50px;
+    box-sizing: border-box;
+    background-color: #2b2b2b;
+    display: flex;
+    flex-flow: column nowrap;
+    display: none;
+    form{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: start;
+        gap: 10px;
+        >div{
+            width: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: start;
+            justify-content: center;
+            gap: 5px;
+            >label{
+                font-size: 20px;
+                font-family: sans-serif;
+                color: white;
+            }
+            >input{
+                width: 100%;
+                padding: 5px 10px;
+                box-sizing: border-box;
+                font-size: 15px;
+                letter-spacing: 1px;
+                border-radius: 10px;
+                &[disabled]{
+                    color: white;
+                }
+            }
+            >select{
+                cursor: pointer;
+                outline: none;
+            }
+        }
+        >input[type=submit]{
+            all: unset;
+            background-color: lightseagreen;
+            padding: 10px 40px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 300ms;
+            &:hover{
+                background-color: rgb(64, 241, 233);
+            }
+            &.calculateoff{
+                cursor: default;
+                background-color: silver;
+            }
+        }
+    }
+    .closeDiv{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        input{
+            all: unset;
+            background-color: crimson;
+            padding: 5px 15px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 300ms;
+            &.show{
+                display: block;
+            }
+            &.close{
+                display: none ;
+            }
+            &:hover{
+                background-color: #ff2b56;
+            }
+
+        }
+    }
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+ 
+}
+
+.massage{
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    padding: 10px;
+    box-sizing: border-box;
+    >h1{
+        font-family: sans-serif;
+    }
+
+}
+.show{
+    display: flex;
+}
+.close{
+    display: none ;
+}
