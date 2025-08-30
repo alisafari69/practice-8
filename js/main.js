@@ -24,7 +24,7 @@ root.innerHTML = `
             </div>
             <div>
                 <label for="tax">tax</label>
-                <input type="number" name="tax" id="tax" value="15" disabled>
+                <input type="number" name="tax" id="tax">
             </div>
             <input type="submit" value="calculate" id="calculate">
         </form>
@@ -53,6 +53,7 @@ function emptyValue() {
   inputLastname.value = "";
   inputHours.value = "";
   inputDegree.value = "";
+  inputTax.value = "";
 }
 function calculatesalary(price) {
   let salary = inputHours.value * price;
